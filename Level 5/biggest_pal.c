@@ -17,7 +17,7 @@ int	is_pal(char *str, int x, int y)
 
 	while ((b - a) > 0)
 	{
-		if (!str[a++] == str[b--])
+		if (str[a++] != str[b--])
 			return (0);
 	}
 		return (1);
